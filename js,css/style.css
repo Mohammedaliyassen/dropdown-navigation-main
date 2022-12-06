@@ -1,0 +1,239 @@
+*{
+    transition: .2s;
+}
+header {
+    padding-left: 50px;
+}
+#logo{
+    position: relative;
+     top: 8px;
+     display: inline;
+}
+header #big{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+#burg{
+    display: none;
+}
+#closeburg{
+    display: none;
+}
+header #big li{
+    list-style: none;
+    padding-left: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: #3b3b3ba2;
+}
+header #big li:hover , header #big li:hover path {
+    color: black;
+    stroke: black;
+}
+#burgList{
+    display: inline-block;
+}
+
+#kid1 , #kid2{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    margin: 25px -70px;
+    box-shadow: 1px 1px 20px #22222248;
+    border-radius: 20px; 
+}
+.coo1{
+    transform: scaleY(0);
+    transform-origin: top;
+    display: none;
+}
+.coo {
+    transform: scaleY(1);
+    display: inline-block;
+}
+#kid2{
+    margin: 30px -100px;
+}
+#kid1{
+    margin: 30px -140px;
+}
+#kid1 img {
+    margin-right: 10px;
+}
+#big #kid1 li , #big #kid2 li{
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+}
+#buttons{
+    display: flex;
+    position: relative;
+    left: 50%;
+}
+#big #buttons li{
+    margin: 0;
+}
+#big #buttons button{
+    border: 0;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #3b3b3ba2;
+}
+section {
+    padding: 110px 190px;    
+    background: url(../images/image-hero-desktop.png) no-repeat;
+    background-position:  85%;
+    background-size: 33vw;
+}
+#mobImg{
+    display: none;
+   }
+section h1 {
+    width: 31vw;
+    margin-bottom: 35px;
+    font-size: 75px;
+    line-height: 80px;
+    font-family: 'Bitter', serif;
+    ;
+}
+section p {
+    width: 30vw;
+    font-size: 20px;
+    color: #0000006b;
+}
+section button {
+    background-color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 11vw;
+    margin: 30px 0;
+}
+#lasButt:hover{
+    background-color: black;
+    color: white;
+    border-color: rgb(61, 61, 61);
+}
+section div {
+    margin-top: 50px;
+}
+section div img {
+    margin-right: 10px;
+}
+button{
+    cursor: pointer;
+}
+/* ------------------------------------------- */
+
+@media screen and (max-width:920px ){
+    header {
+        height: 31px;
+    }
+    #logo{
+        position: relative;
+         top: 30px;
+         display: block;
+    }
+    #burgList{
+        transform: scale(0);
+        transform-origin: top right;
+        background: white;
+        position: sticky;
+        height: 100vh;
+        width: 50vw;
+        left: 50%;
+        top: -5vh;
+    }
+    #bob{
+        background: black;
+        opacity: .5;
+        height: 101vh;
+        width: 50vw;
+        top: 0vh;
+        left: -1vw;
+        position: absolute;
+        display: none;
+    }
+    header #big{
+        margin-top: 100px;
+        display: block;
+        list-style: none;
+        font-size: 40px;
+    }
+    #buttons{
+        display: block;
+        left: 0%;
+    }
+    #big #buttons button{
+        font-size: 40px;
+        width: auto;
+        height: auto;
+        margin: 10px;
+    }
+    #burg{
+        display: inline;
+        position: absolute;
+        left: 86%;
+        margin: 10px 20px ;
+    }
+    #closeburg{
+        display: none;  
+        position: absolute;
+        left: 86%;
+        margin: 10px 20px ;
+    }
+    #kid1 , #kid2{
+        position: relative; 
+        background-color: white;
+        padding: 10px;
+        margin: 0px 0px; 
+        box-shadow: 1px 1px 20px #22222248;
+        border-radius: 20px;
+        
+}
+    section {
+        width: auto;
+        padding: 10px;
+        background: none;
+        text-align: center;
+    }
+    #sec1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+   #mobImg{
+    width: 100%;
+    display: initial;
+   }
+   section h1{
+    width: 100%; 
+    margin-bottom: 5px;
+    font-size: 85px;
+    line-height: 80px;
+    font-family: 'Bitter', serif;
+   }
+   section p {
+    width: 100%;
+    font-size: 35px;
+    color: #0000006b;
+   }
+   section button {
+    background-color: white;
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 15px;
+    width:auto; 
+    margin: 0px 0; 
+   }
+   
+   #imgSec img{
+    margin-right: 30px;
+    width: 120px;
+   }
+}
